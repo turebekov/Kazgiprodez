@@ -1,0 +1,339 @@
+
+.header-bg{
+   /* background-image: url("../images/back-1.png");*/
+    position: fixed;
+    z-index: -999999;
+    opacity: 2;
+}
+.bgvideo{
+    opacity: 0;
+}
+video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999;
+
+}
+.giprodez{
+    font-size: 36px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(242, 242, 242);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    z-index: 8;
+    margin-top: 125px;
+}
+.giprodez-text{
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(242, 242, 242);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+.save{
+    margin-top: 85px;
+}
+.btn-call{
+    background: #261B2B;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(242, 242, 242);
+    line-height: 1.2;
+    text-align: center;
+    height: 50px;
+    width: 190px;
+}
+#btn-call{
+    margin-top: 50px;
+}
+.span-btn{
+    margin-right: 10px !important;
+    margin-top: 60% !important;
+}
+header{
+    //display: none !important;
+}
+.section{
+    display: none !important;
+}
+.btn-home{
+    background: #261B2B;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(242, 242, 242);
+    line-height: 1.2;
+    text-align: center;
+    height: 50px;
+    width: 190px;
+    margin-top: 30px;
+}
+.information{
+    height: 100%;
+    background-color: #F2F2F2;
+}
+.title{
+    font-size: 56px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgba(0, 0, 0, 0.2);
+    line-height: 1.2;
+    text-align: right;
+    margin-top: 50px;
+}
+.information-text{
+    font-size: 24px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(34, 12, 16);
+    font-weight: bold;
+    margin-top: 30px;
+}
+.information-text-2{
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgba(34, 12, 16, 0.871);
+    line-height: 1.2;
+    margin-top: 30px;
+}
+.read{
+    background-color: rgb(49, 102, 105);
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(242, 242, 242);
+    height: 41px;
+    width: 141px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+}
+.read-mn{
+    margin-bottom: 24px;
+}
+.title-2{
+    font-size: 56px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgba(0, 0, 0, 0.2);
+    line-height: 1.2;
+    text-align: right;
+}
+.baground{
+    background-image: url("../images/bugs.png");
+    height: 100%;
+}
+.application{
+    background: rgba(219, 221, 221, 0.96);
+
+}
+.application-title{
+    font-size: 48px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(34, 12, 16);
+    line-height: 1.2;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+hr{
+    height: 2px;
+   border-top: 2px solid #000000 !important;
+    margin-top: 50px !important;
+}
+.form-title{
+    font-size: 36px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(55, 47, 45);
+    line-height: 1.2;
+    margin-top: 20px;
+}
+.input-text{
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(55, 47, 45);
+    line-height: 1.2;
+}
+.input-tel{
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(55, 47, 45);
+}
+.tel{
+    margin-left: 40px !important;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    width: 219px;
+    height: 44px;
+}
+.name{
+    margin-left: 70px !important;
+    width: 297px;
+    height: 44px;
+    border-width: 2px;
+    border-color: rgb(34, 12, 16);
+    border-style: solid;
+}
+.organ{
+    margin-left: 70px;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    width: 219px;
+    height: 44px;
+}
+.text{
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+    width: 349px;
+    height: 146px;
+}
+.textarea{
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(55, 47, 45);
+    line-height: 1.2;
+    margin-top: 130px;
+}
+.form-btn{
+
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+.about{
+    height: 100%;
+    background-color: #F2F2F2;
+}
+.about-text{
+    font-size: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgba(34, 12, 16, 0.871);
+    line-height: 1.2;
+}
+.about-div{
+    margin-top: 50px !important;
+}
+.footer{
+    background-color: #220C10;
+    height: 100%;
+}
+.kazgip{
+    font-size: 30px;
+}
+.footer-text{
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(242, 242, 242);
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 65px;
+    margin-bottom: 70px;
+}
+.contact{
+    font-size: 24px;
+    font-family: 'Roboto Condensed',sans-serif;
+    color: rgb(242, 242, 242);
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 40px;
+}
+.contact-tel{
+    font-size: 16px;
+    font-family: 'Roboto Condensed',sans-serif;
+    color: rgb(242, 242, 242) !important;
+    line-height: 1.2;
+
+}
+.contact-tel > a{
+    color: rgb(242, 242, 242) !important;
+}
+@media screen and (max-width:992px) {
+    .contact-tel{
+        text-align: center;
+    }
+    .name{
+        width: 70% !important;
+    }
+    .organ{
+        width: 70% !important;
+    }
+    .text{
+        width: 70% !important;
+    }
+    .tel{
+        width: 70% !important;
+    }
+    .title{
+       font-size: 25px;
+    }
+    .title-2{
+        font-size: 25px;
+    }
+    .application-title{
+        font-size: 30px;
+    }
+    .about-small{
+        background-color: #F2F2F2;
+        height: 100% !important;
+    }
+    .footer-small{
+        background-color: #220C10;
+        height: 100%;
+    }
+
+}
+.modal-form{
+    width: 50% !important;
+    margin-left: 25%;
+}
+.modal-text{
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: rgba(34, 12, 16, 0.871);
+    line-height: 1.2;
+}
+.modal-button{
+    background-color: rgb(49, 102, 105);
+    font-size: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(242, 242, 242);
+    height: 41px;
+    width: 141px;
+    border-radius: 30px;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

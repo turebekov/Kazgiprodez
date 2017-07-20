@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>KAZGIPRODEZ</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="header-bg">
+</div>
+<header>
+
+    <div id="bgvideo">
+
+        <video autoplay loop muted>
+            <source src="kitchen.mp4" type="video/mp4"></source>
+        </video>
+    </div>
+
+    <img src="images/back-1.png" class="header-bg">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6">
+                <p class="giprodez">ТОО «КАЗГИПРОДЕЗ»</p>
+                <p class="giprodez-text">Мы на рубежах защиты от вредителей!</p>
+
+
+                <p class="giprodez-text save">Избавим Ваc от тараканов, муравьев, <br> жучков, мышей и др. вредителей
+                </p>
+
+
+                <button type="button" data-toggle="modal" data-target="#myModal" class="btn-call" id="btn-call">Заказать
+                    звонок
+                </button>
+
+
+            </div>
+
+            <button class="btn-call pull-right span-btn" id="further"><span class="span-btn">Далее</span> <img
+                    src="images/dalee.png"></button>
+        </div>
+    </div>
+
+</header>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Заказать звонок</h4>
+            </div>
+            <div class="modal-body">
+
+                            <form id="modal" class="modal-form" >
+                                <p>Ваше Имя : </p>
+
+                                <input type="text" name="name" required class="form-control">
+                                <p for="organ">Организация: </p>
+                                <input type="text" name="organ" class="form-control">
+                                <p for="tel">Телефон</p>
+                                <input type="number" required name="tel" class="form-control">
+                                <br>
+                                <button type="submit" class="read" >Отправить</button>
+                            </form>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<section class="section">
+    <div class="information">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 col-md-offset-1">
+                    <button id="home" class="btn-home">На главную</button>
+                </div>
+
+                <div class="col-md-8 col-md-offset-2">
+                    <p class="title">Что такое дезинсекция ? </p>
+                    <div class="col-md-9">
+                        <p class="information-text">Дезинсекция и их задачи</p>
+                        <p class="information-text-2">Вред, наносимый членистоногими, не ограничивается их ролью в
+                            распространении заразных болезней.
+                            Многие виды членистоногих
+                            (вши, блохи, комары ,клещи, клопы), обитая в жилище человека или в местах его хозяйственной
+                            деятельности в природе и питаясь кровью человека, раздражают...</p>
+                        <div id="componentRead">
+                            <modal v-if="showModal" @close="showModal = false"></modal>
+                            <button @click="showModal = true" class="read">Подробнее</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-8 col-md-offset-4">
+                    <p class="title-2">Что такое деразитация ? </p>
+                    <div class="col-md-9">
+                        <p class="information-text">Дератизация</p>
+                        <p class="information-text-2">Дератизация - отдел дезинфекции борьбы с опасными в
+                            эпидемиологическом
+                            отношении и вредными для разных отраслей хозяйства грызунами. Грызуны встречаются
+                            повсеместно, и
+                            приспособлены к самым разнообразным условиям жизни. Они обитают в лесах, , в степях, в
+                            водоемах,
+                            в горах...</p>
+                        <div id="componentDera">
+                            <deratizaciya v-if="showModal" @close="showModal=false"></deratizaciya>
+                            <button class="read read-mn" @click="showModal = true">Подробнее</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="baground">
+        <div class="container application">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="application-title">Заявка на услугу <br> дезинсекции или дератизации</p>
+                    <hr>
+                    <form id="mail">
+                        <div class="col-md-6">
+                            <p class="form-title">Заполните данные : </p>
+
+                            <p class="input-text">Ваше имя </p>
+                            <input class="name" name="name" type="text" id="name" required>
+                            <p class="input-text"> Организация * </p>
+                            <input type="text" name="organ" class="organ" id="organ">
+                            <p class="input-text">Телефон</p>
+                            <span class="input-tel"> +7 </span> <input class="tel" name="tel" type="number" id="tel"
+                                                                       required>
+
+
+                        </div>
+                        <div class="col-md-6">
+                            <p class="textarea">Опишите проблему* </p>
+                            <textarea name="text" class="text" cols="30" rows="10"></textarea>
+                            <p>* Поля, необязательные к заполнению</p>
+                        </div>
+
+                        <p class="form-btn">
+                            <button type="submit" class="read">Отправить</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container about-small">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 about">
+
+                    <div class="col-md-2 col-md-offset-1 about-div ">
+                        <p align="center"><img src="images/about-1.png" class="img-responsive "></p>
+                    </div>
+                    <div class="col-md-9 about-div ">
+                        <p class="about-text">Наши специалисты обслуживают магазины, супермаркеты, школы, детские
+                            сады,
+                            предприятия общественного питания,зоны отдыха, спортивно — оздоровительные комплексы
+                            и т.д.</p>
+                    </div>
+
+
+                    <div class="col-md-2 col-md-offset-1 about-div ">
+                        <p align="center"><img src="images/perfume.png" class="img-responsive"></p>
+                    </div>
+                    <div class="col-md-9 about-div ">
+                        <p class="about-text ">Мы используем только качественные средства и гарантируем отсутствие
+                            какого-либо запаха. Средства абсолютно безвредны </p><br><br>
+                    </div>
+
+                    <div class="col-md-2 col-md-offset-1 about-div ">
+                        <p align="center"><img src="images/recycle.png" class="img-responsive"></p>
+                    </div>
+                    <div class="col-md-9 about-div">
+                        <p class="about-text">Наши специалисты обслуживают магазины, супермаркеты, школы, детские
+                            сады,
+                            предприятия общественного питания,зоны отдыха, спортивно — оздоровительные комплексы
+                            и т.д.</p>
+                    </div>
+
+                    <div class="col-md-2 col-md-offset-1 about-div ">
+                        <p align="center"><img src="images/tubes.png" class="img-responsive"></p>
+                    </div>
+                    <div class="col-md-9 about-div ">
+                        <p class="about-text">За время работы нашими специалистами накоплен огромный опыт
+                            и мы с уверенностью можем сказать, что решим любую
+                            Вашу проблему</p> <br> <br>
+                    </div>
+
+                    <br>
+
+                    <div class="col-md-2 col-md-offset-1 about-div ">
+                        <p align="center"><img src="images/quality.png" class="img-responsive"></p>
+                    </div>
+                    <div class="col-md-9 about-div col-xs-12">
+                        <p class="about-text">Быстро и качественно избавим Ваши помещения и прилегающие
+                            к ним территории от насекомых и грызунов</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container footer-small">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 footer">
+                        <div class="col-md-5">
+                            <p class="footer-text"><b class="kazgip">ТОО «КАЗГИПРОДЕЗ» </b><br>
+                                Мы на рубежах защиты от вредителей!</p>
+                        </div>
+                        <div class="col-md-7">
+                            <p class="contact">Контакты</p>
+                            <div class="col-md-6">
+                                <p class="contact-tel">Алматы и Алматинская область: </p>
+                                <p class="contact-tel"><a href="tel:+77756644444"> +7 (775) 664-44-44</a></p>
+                                <p class="contact-tel"><a href="tel:+77017949596"> +7 (701) 794-95-96</a></p>
+
+                            </div>
+                            <div class="col-md-6">
+                                <p class="contact-tel">Кызылорда : </p>
+                                <p class="contact-tel"><a href="tel:+77027291702"> +7 (702) 729-17-02</a></p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
+
+<script src="https://unpkg.com/vue@2.2.6"></script>
+<script>
+    Vue.component('modal', {
+        template: '' +
+        '<div class="modal is-active">' +
+        '<div class="modal-background"></div>' +
+        '<div class="modal-content">' +
+        '<div class="box">' +
+        '<h3>Понятия о дезинсекции и ее задачи</h3>'+
+        '<p class="modal-text">' +
+        'Вред, наносимый членистоногими, не ограничивается их ролью в распространении заразных болезней. ' +
+        'Многие виды членистоногих ( вши, блохи, комары, клещи, клопы), обитая в жилище человека или в местах ' +
+        'его хозяйственной деятельности в природе и питаясь кровью человека, раздражают его, нарушают отдых и ' +
+        'сон и тем вредят здоровью и снижают нередко его трудоспособность.'+
+        'Практика борьбы с вредителями в комплексе с санитарными мероприятиями, направленными на лучшую'+
+        'организацию обезвреживания способствует освобождению жилья человека, мест общественного пользования, '+
+        'лечебных и детских учреждений от мест выплода и ликвидации многих из них.'+
+            'Все это потребовало большого развития знаний в области борьбы с членистоногими, изыскания новых и'+
+        'эффективных средств и методов истребления их в открытой природе, жилье человека, его одежде и т.д.'+
+            'и не только в целях истребления их, но и в целях защиты человека и его жилья от залета, заноса'+
+        'и нападения на него членистоногих.'+
+            'Эти задачи, ставшими ведущими в области борьбы с многими инфекционными болезнями, передающимися членистоногими,'+
+        'повели к тому, что проблема организации и проведения борьбы с ними выделилась в особый большой раздел дезинфекции,'+
+        'называемый дезинсекцией.'+
+            'Дезинсекция, как и вся дезинфекция в целом, неразрывно связана с эпидемиологией трансмиссивных болезней:'+
+    'борьба с членистоногими во всех случаях должна оказать воздействие на пути передачи ими инфекций и этим самым способствовать'+
+    'ликвидации очагов, а в ряде случаев и предупреждению возникновения их.' +
+        '</p>' +
+        '</div>' +
+            '<p align="center"><button @click="$emit(\'close\')" class="modal-button">Назад</button></p>'+
+        '</div>' +
+        '<button class="modal-close" @click="$emit(\'close\')"></button>' +
+        '</div>'
+    });
+
+    new Vue({
+        el: '#componentRead',
+        data: {
+            showModal: false
+        }
+    })
+
+    Vue.component('deratizaciya', {
+        template: '' +
+        '<div class="modal is-active">' +
+        '<div class="modal-background"></div>' +
+        '<div class="modal-content">' +
+        '<div class="box">' +
+        '<h3>Дератизация</h3>'+
+        '<p class="modal-text">' +
+        'Дератизация - отдел дезинфекции борьбы с опасными в эпидемиологическом отношении' +
+        ' и вредными для разных отраслей хозяйства грызунами.Грызуны встречаются повсеместно,' +
+        ' и приспособлены к самым разнообразным условиям жизни. Они обитают в лесах, в степях, ' +
+        'в водоемах, в горах, на равнинах, постоянно живут вблизи человека, и являются эпидемиологически опасны для людей.'+
+        'Меры борьбы с грызунами также складываются из мероприятий профилактических и истребительных.'+
+        'Основной целью первых является создание таких условий, при которых грызуны были бы лишены возможности находить убежище и пищу.'+
+        'Истребительные мероприятия имеют цель уничтожения грызунов путем применения различных способов истребления их.'+
+        '</p>' +
+        '</div>' +
+        '<p align="center"><button @click="$emit(\'close\')" class="modal-button">Назад</button></p>'+
+        '</div>' +
+        '<button class="modal-close" @click="$emit(\'close\')"></button>' +
+        '</div>'
+    });
+    new Vue({
+        el: '#componentDera',
+        data: {
+            showModal: false
+        }
+    })
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btn-call").hover(function () {
+            $('video').css('opacity', '0');
+        }, function () {
+            $('video').css('opacity', '1');
+        });
+    });
+    $(document).ready(function () {
+        $('#further').click(function () {
+            $('header').css('display', 'none');
+            $('section').toggleClass("section", false);
+
+        });
+    });
+    $(document).ready(function () {
+        $('#home').click(function () {
+            $('header').css('display', 'block');
+            $('section').toggleClass("section");
+
+        });
+    });
+
+</script>
+<script>
+    $(document).ready(function () {
+        $("#mail").submit(function () {
+
+            // Получение ID формы
+            var formID = $(this).attr('id');
+            // Добавление решётки к имени ID
+            var formNm = $('#' + formID);
+            $.ajax({
+                type: "POST",
+                url: 'mail.php',
+                data: formNm.serialize(),
+                success: function (data) {
+                    // Вывод текста результата отправки
+                    $(formNm).html(data);
+                },
+                error: function (jqXHR, text, error) {
+                    // Вывод текста ошибки отправки
+                    $(formNm).html(error);
+                }
+            });
+            return false;
+        });
+
+    })
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#modal").submit(function () {
+
+            // Получение ID формы
+            var formID = $(this).attr('id');
+            // Добавление решётки к имени ID
+            var formNm = $('#' + formID);
+            $.ajax({
+                type: "POST",
+                url: 'mailer.php',
+                data: formNm.serialize(),
+                success: function (data) {
+                    // Вывод текста результата отправки
+                    $(formNm).html(data);
+                },
+                error: function (jqXHR, text, error) {
+                    // Вывод текста ошибки отправки
+                    $(formNm).html(error);
+                }
+            });
+            return false;
+        });
+    })
+</script>
+</body>
+</html>
